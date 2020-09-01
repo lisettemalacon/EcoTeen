@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <link rel= "shortcut icon" type="image/img" href= "img/favicon.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EcoTeen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">An informative resource for the environment</span>
+      <span class="site-heading-lower">EcoTeen</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-uppercase text-expanded" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="nav-link text-uppercase text-expanded" href="climate_change.html">Climate Change</a>
+                  <a class="nav-link text-uppercase text-expanded" href="deforestation.html">Deforestation</a>
+                  <a class="nav-link text-uppercase text-expanded" href="ocean_pollution.html">Ocean Pollution</a>
+                  <a class="nav-link text-uppercase text-expanded" href="plastic.html">Plastic</a>
+                  <a class="nav-link text-uppercase text-expanded" href="poaching.html">Poaching</a>
+
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Diys</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="tips.html">Everyday Tips</a>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="map.html">Recycling Centers</a>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="citations.html">Citations</a>
+            </li>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    </nav>
+
+    <br></br>
+    <br></br>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">OC/LA County</span>
+                  <span class="section-heading-lower">Recycling Centers</span>
+                </h2>
+                <style>
+                   /* Set the size of the div element that contains the map */
+                  #map {
+                    height: 400px;  /* The height is 400 pixels */
+                    width: 100%;  /* The width is the width of the web page */
+                   }
+                </style>
+              </head>
+              <body>
+
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+              // Initialize and add the map
+              function initMap() {
+                var elsimore = {
+    		            info: '<strong>SoCal E-Waste</strong><br>\
+    				           570 Central Ave J3<br>Lake Elsinore, CA 92530<br>\
+    					         <a href="https://goo.gl/maps/k2kaSKbp81B2" target="_blank">Get Directions</a>',
+    		            lat: 33.688747,
+    		            long: -117.340971
+    	              };
+
+    	          var vernon = {
+    		            info: '<strong>SoCal Recycling Industries</strong><br>\
+    					           2417 E 25th St<br>Vernon, CA 90058<br>\
+    					           <a href="https://goo.gl/maps/HR5gKwu5bGz" target="_blank">Get Directions</a>',
+    		            lat: 34.015549,
+    		            long: -118.229362
+    	            };
+
+    	          var hb = {
+    		            info: '<strong>SoCal Industrial Services, Inc.</strong><br>\r\
+  	                     18359 Enterprise Ln<br>Huntington Beach, CA 92648<br>\
+    					           <a href="https://goo.gl/maps/NVCM43gJwCF2" target="_blank">Get Directions</a>',
+    		            lat: 33.695792,
+    		            long: -117.99848299999996
+    	           };
+               var pomona = {
+                info: '<strong>SoCal Renew Recycling</strong><br>\r\
+                1315 E 3rd St<br>Pomona, CA 91766<br>\
+                  <a href="https://goo.gl/maps/B5uiymu3vYn" target="_blank">Get Directions</a>',
+                  lat: 34.057752,
+                  long: -117.729817
+                };
+              var placentia = {
+                 info: '<strong>Waste Management - SoCal Curbside Service</strong><br>\r\
+                  6617 Jefferson St #500<br>Placentia, CA 92870<br>\
+                  <a href="https://goo.gl/maps/4HXtE2fJGUt" target="_blank">Get Directions</a>',
+                 lat: 33.867678,
+                 long: -117.837093
+               };
+             var commerce = {
+                info: '<strong>SoCal Metals Inc.</strong><br>\r\
+                  3030 Tanager Ave<br>Commerce, CA 90040<br>\
+                  <a href="https://goo.gl/maps/1Jdepm8P9wP2" target="_blank">Get Directions</a>',
+                lat: 33.987023,
+                long: -118.130646
+              };
+            var monica = {
+                 info: '<strong>Southern California Disposal and Recycling Company</strong><br>\r\
+                 1908 Frank St<br>Santa Monica, CA 90404<br>\
+                 <a href="https://goo.gl/maps/vi4BuE8juV62" target="_blank">Get Directions</a>',
+                 lat: 34.025603 ,
+                 long: -118.467026
+               };
+            var riverside = {
+                 info: '<strong>SoCal Pumping Co.</strong><br>\r\
+                  5975 Jasmine St #1124<br> Riverside, CA 92504<br>\
+                  <a href="https://goo.gl/maps/nJPNw6nrPoo" target="_blank">Get Directions</a>',
+                 lat: 33.96161,
+                 long: -117.441001
+               };
+           var irvine = {
+                info: '<strong>E-Recycling of California</strong><br>\r\
+                  8065 Marine Way<br>Irvine, CA 92618<br>\
+                  <a href="https://goo.gl/maps/dB1QbnTKp2G2" target="_blank">Get Directions</a>',
+                lat: 33.665397,
+                long:  -117.735138
+              };
+          var la = {
+             info: '<strong>Etech Asset Liquidator of Southern California</strong><br>\r\
+                777 Traction Ave<br>Los Angeles, CA 90013<br>\
+                <a href="https://goo.gl/maps/E19CGhFAwBL2" target="_blank">Get Directions</a>',
+             lat: 34.045542,
+             long:  -118.235992
+             };
+         var anaheim = {
+              info: '<strong>Orange County Scrap</strong><br>\r\
+                919 E South St<br>Anaheim, CA 92805<br>\
+                <a href="https://goo.gl/maps/KsEo4QEujbu" target="_blank">Get Directions</a>',
+              lat: 33.82942,
+              long: -117.901557
+           };
+         var lakewood = {
+              info: '<strong>Good Earth Recycling Center</strong><br>\r\
+                2005 Bixby Rd<br>Lakewood, CA 90712<br>\
+                <a href="https://goo.gl/maps/WJfxrNbCNLB2" target="_blank">Get Directions</a>',
+              lat: 33.826902,
+              long: -118.166588
+           };
+         var ana = {
+              info: '<strong>Allan Co. Santa Ana</strong><br>\r\
+           2540 S Main St<br>Santa Ana, CA 92707<br>\
+              <a href="https://goo.gl/maps/bJdJs9cGBzM2" target="_blank">Get Directions</a>',
+              lat: 33.711958,
+              long: -117.86838
+           };
+         var irvine2 = {
+              info: '<strong>Waste Management - Orange County</strong><br>\r\
+           16122 Construction Cir E<br>Irvine, CA 92618<br>\
+              <a href="https://goo.gl/maps/jc1meAt79V32" target="_blank">Get Directions</a>',
+              lat: 33.695624,
+              long: -117.81855
+           };
+        var gate = {
+              info: '<strong>California Metals Recycling</strong><br>\r\
+                9309 Rayo Ave<br>South Gate, CA 90280<br>\
+                <a href="https://goo.gl/maps/R3vqXJq2Tiv" target="_blank">Get Directions</a>',
+              lat: 33.948888,
+              long: -118.178229
+           };
+       var commerce2 = {
+              info: '<strong>Allan Co.</strong><br>\r\
+                5811 E 61st St<br>Commerce, CA 90040<br>\
+                <a href="https://goo.gl/maps/mzM4xfW4Nyt" target="_blank">Get Directions</a>',
+              lat: 33.981423 ,
+              long: -118.161602
+           };
+       var locations = [
+        [elsimore.info, elsimore.lat, elsimore.long, 0],
+        [vernon.info, vernon.lat, vernon.long, 1],
+        [hb.info, hb.lat, hb.long, 2],
+        [pomona.info, pomona.lat, pomona.long, 3],
+        [placentia.info, placentia.lat, placentia.long, 4],
+        [commerce.info, commerce.lat, commerce.long, 5],
+        [monica.info, monica.lat, monica.long, 6],
+        [riverside.info, riverside.lat, riverside.long, 7],
+        [irvine.info, irvine.lat, irvine.long, 8],
+        [la.info, la.lat, la.long, 9],
+        [anaheim.info, anaheim.lat, anaheim.long, 10],
+        [lakewood.info, lakewood.lat, lakewood.long, 11],
+        [ana.info, ana.lat, ana.long, 12],
+        [irvine2.info, irvine2.lat, irvine2.long, 13],
+        [gate.info, gate.lat, gate.long, 14],
+        [commerce2.info, commerce2.lat, commerce2.long, 15],
+      ];
+
+              	var map = new google.maps.Map(document.getElementById('map'), {
+              		zoom: 6,
+              		center: new google.maps.LatLng(33.688747, -117.340971),
+              		mapTypeId: google.maps.MapTypeId.ROADMAP
+              	});
+
+              	var infowindow = new google.maps.InfoWindow({});
+
+              	var marker, i;
+
+              	for (i = 0; i < locations.length; i++) {
+              		marker = new google.maps.Marker({
+              			position: new google.maps.LatLng(locations[i][1], locations[i][2], locations[i][3], locations[i][4], locations[i][5], locations[i][6], locations[i][7], locations[i][8], locations[i][9], locations[i][10], locations[i][11]),
+              			map: map
+              		});
+
+              		google.maps.event.addListener(marker, 'click', (function (marker, i) {
+              			return function () {
+              				infowindow.setContent(locations[i][0]);
+              				infowindow.open(map, marker);
+              			}
+              		})(marker, i));
+  	             }
+               }
+
+
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the
+
+              () function
+                -->
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNDJ52RvDvi30Veinj0EPb2iMFH_AkmNc&callback=initMap">
+                </script>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; EcoTeen 2018</p>
+        <a href="https://www.facebook.com/unenvironment" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/unenvironment/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/unenvironment" target="_blank"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
